@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F7F2EA;
+  --ivory: #FAF8F3;
+  --terracotta: #C4714B;
+  --terra-light: #E8A882;
+  --terra-deep: #A05530;
+  --sage: #7D9B76;
+  --sage-light: #C2D4BF;
+  --brown: #2E1B0E;
+  --brown-mid: #6B4A32;
+  --warm-gray: #9B8E84;
+  --blush: #F0D5C8;
+  --sand: #E6D5BF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--brown);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--terracotta);
+  color: white;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Premium scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sand);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terracotta);
+}
