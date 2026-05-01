@@ -56,7 +56,7 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} Loopbelle. All rights reserved.</p>
 
         <p>
-          Created by <span className="text-[#E8A882]">Swasthi Sangoli</span>
+          Owned by <span className="text-[#E8A882]">Swasthi Sangoli</span>
         </p>
 
         <p className="text-[#6B4A32]">
